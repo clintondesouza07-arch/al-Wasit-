@@ -1,0 +1,14 @@
+{
+  "name": "Al Wasit Machinery Trading Establishment",
+  "short_name": "Al Wasit Machinery",
+  "description": "Heavy equipment trading, rental, spare parts and after-sales service across the Middle East, Africa and Asia since 1985.",
+  "start_url": "/alwasit-website.html",
+  "display": "standalone",
+  "background_color": "#141414",
+  "theme_color": "#F5A623",
+  "icons": [
+    { "src": "favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
