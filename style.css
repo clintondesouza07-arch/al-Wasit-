@@ -355,3 +355,13 @@ footer a:hover{color:var(--o)}
 
 /* Hide selected hero slides on mobile only */
 @media(max-width:700px){.hslide.hide-m{display:none!important}}
+
+/* Explore Our Range — product-on-white tiles */
+.tiles-prod .tile.prod{height:300px;background:linear-gradient(180deg,#ffffff,#f2f2f2);border:1px solid #1A1A1A;border-radius:14px;display:flex;flex-direction:column;align-items:stretch;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.06);transition:transform .3s,border-color .3s,box-shadow .3s}
+.tiles-prod .tile.prod:hover{transform:translateY(-6px);border-color:var(--o);box-shadow:0 18px 40px rgba(0,0,0,.14)}
+.tile.prod .tprod{flex:1;min-height:150px;margin:18px 18px 2px;background-size:contain;background-repeat:no-repeat;background-position:center}
+.tile.prod .tin{position:static;padding:4px 18px 18px;color:var(--d);width:auto}
+.tile.prod .tin h3{color:var(--d);font-size:22px;text-transform:uppercase;line-height:1}
+.tile.prod .tin p{color:var(--m);opacity:1;font-size:13px;margin:4px 0 10px}
+.tile.prod .tin span{position:static;transform:none;opacity:1;display:inline-flex;color:#141414;background:var(--o);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.4px;padding:6px 12px;border-radius:6px}
+.tile.prod .tnum{color:var(--o)}
