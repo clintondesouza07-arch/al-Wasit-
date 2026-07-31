@@ -345,10 +345,10 @@ footer a:hover{color:var(--o)}
 .card{border:1px solid #1A1A1A}
 .card:hover{border-color:var(--o)}
 
-/* Mobile hero: show the FULL photo (fit whole image) but keep the zoom motion */
+/* Mobile hero: fill the frame (no bars) but tame the zoom so it's not over-magnified */
 @media(max-width:700px){
   .hero.hero-lg{min-height:calc(100svh - 62px)}
-  .hslide img{object-fit:contain;background:#121110}
+  .hslide img{object-fit:cover;object-position:center center;transform:scale(1.02)}
   .hslide.preset-in img,.hslide.preset-out img,.hslide.preset-imm img,.hslide.preset-aer img{animation-name:kbSoft}
-  @keyframes kbSoft{from{transform:scale(1)}to{transform:scale(1.08)}}
+  @keyframes kbSoft{from{transform:scale(1.02)}to{transform:scale(1.09)}}
 }
