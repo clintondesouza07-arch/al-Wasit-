@@ -340,3 +340,15 @@ footer a:hover{color:var(--o)}
 .backbtn{display:inline-flex;align-items:center;gap:6px;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.12em;color:#fff;text-decoration:none;padding:8px 15px 8px 11px;border-radius:999px;background:rgba(255,255,255,.1);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1.5px solid rgba(255,255,255,.45);transition:background .2s,border-color .2s}
 .backbtn:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.7)}
 .backbtn svg{width:13px;height:13px;flex:0 0 auto}
+
+/* Thin dark frame on all product/preview cards */
+.card{border:1px solid #1A1A1A}
+.card:hover{border-color:var(--o)}
+
+/* Mobile hero: show the FULL photo (fit whole image) but keep the zoom motion */
+@media(max-width:700px){
+  .hero.hero-lg{min-height:calc(100svh - 62px)}
+  .hslide img{object-fit:contain;background:#121110}
+  .hslide.preset-in img,.hslide.preset-out img,.hslide.preset-imm img,.hslide.preset-aer img{animation-name:kbSoft}
+  @keyframes kbSoft{from{transform:scale(1)}to{transform:scale(1.08)}}
+}
