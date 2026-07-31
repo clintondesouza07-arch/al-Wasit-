@@ -352,3 +352,6 @@ footer a:hover{color:var(--o)}
   .hslide.preset-in img,.hslide.preset-out img,.hslide.preset-imm img,.hslide.preset-aer img{animation-name:kbSoft}
   @keyframes kbSoft{from{transform:scale(1.02)}to{transform:scale(1.09)}}
 }
+
+/* Hide selected hero slides on mobile only */
+@media(max-width:700px){.hslide.hide-m{display:none!important}}
