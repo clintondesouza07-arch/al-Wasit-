@@ -369,3 +369,13 @@ footer a:hover{color:var(--o)}
 /* Buy New generated image has extra white padding — zoom slightly to match others */
 .tiles-prod .tile.prod[href="buy-new.html"] .tprod{background-size:114%}
 .tiles-prod .tile.prod .tprod{margin:14px 14px 2px}
+
+/* Mobile dropdown menu: dark, readable links on the white panel */
+@media(max-width:980px){
+  .nlinks{gap:2px;padding:10px 24px 14px}
+  .nlinks a{color:var(--d);font-size:16px;padding:12px 2px;width:100%;border-bottom:1px solid var(--b)}
+  .nlinks a:last-child{border-bottom:none}
+  .nlinks a:not(.ncta):after{display:none}
+  .nlinks a:hover,.nlinks a.active{color:var(--o)}
+  body.home nav.solid .burger,nav .burger{color:#fff}
+}
